@@ -7,3 +7,4 @@ With those data, I construted features like 'RSI', 'KDJ', 'MACD', etc. I concate
 
 With the features and labels, I built a LSTM network to fit them and thus derived a model that can be used to predict the market trend with the market data of the past 15 days as an input.
 
+The LSTM model is saved as lstm_model_4.pb
