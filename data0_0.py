@@ -363,7 +363,7 @@ class data:
 
             index_data = index_data.dropna(axis=0, how='any')
 
-            if n == 9:
+            if n == 19:
                 index_data.to_csv('./data.csv')
 
 
@@ -381,7 +381,7 @@ class data:
                 seq = []
                 # 前5*j天的每一天数据都加入序列中
                 for d in range(5 * 3):
-                    seq.append(post_index_data.iloc[i - 5 * 4 + d])
+                    seq.append(post_index_data.iloc[i - 5 * 3 + d])
                 self.data[n][date_time] = seq
                 # label是一个字典，其中key为日期，value为该日对应的标签
 
